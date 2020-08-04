@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ultra Pure Indicator</string>
+    <string name="text">Light Mode</string>
+    <string name="titles">Communicate</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="density"><b><i>Density: </i></b></string>
+    <string name="viscosity"><b><i>Viscosity: </i></b></string>
+    <string name="quantity"><b><i>Quantity: </i></b></string>
+    <string name="quality"><b><i>Quality: </i></b></string>
+    <string name="title_activity_history">History</string>
+    <string name="lessThanOrEqual">\u2264</string >
+</resources>

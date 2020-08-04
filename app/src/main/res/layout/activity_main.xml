@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.sihfinal.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <GridView
+            android:id="@+id/gridview1"
+            android:paddingTop="?android:attr/actionBarSize"
+            android:clipToPadding="false"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:numColumns="2"
+            android:stretchMode="columnWidth">
+        </GridView>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/header"
+        android:id="@+id/nav_view"
+        android:background="@color/colorAccent"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        app:itemTextColor="@color/textColor"
+        app:itemIconTint="@color/textColor"
+        app:menu="@menu/menu"
+        android:layout_gravity="start" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

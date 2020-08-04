@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp"
+    android:background="@color/colorAccent"
+    tools:context=".About">
+
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:textSize="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/textColor"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Developed by Team Infinity Gems"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/ic_launcher"
+                android:id="@+id/qr" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:text="The app is designed for Android and is used for measuring the Quality and Quantity of the Petrol in Real time by Live Density Test and Viscosity Test."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:text="Software Developers:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:text="KUTTRALAM V C - Lead Android Developer"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="5dp"
+                android:text="Mohana Priya A S - Android Developer"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:text="Hardware Developers:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="10dp"
+                android:text="Balachander S - Project Head"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="5dp"
+                android:text="G Kalyana Abenanth - Lead Hardware Developer"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="10dp"
+                android:text="Dhanya R - Hardware Developer"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="5dp"
+                android:text="U Sivakarthikeyan - Hardware Developer"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:text="Icon made by Freepik from www.flaticon.com"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:text="All rights reserved."/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

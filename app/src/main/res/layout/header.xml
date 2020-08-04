@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="20dp"
+    android:background="@drawable/stock">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_launcher_round" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultra Pure Indicator"
+        android:textStyle="bold"
+        android:textColor="@color/light_goldenrod_yellow"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Infinity Gems"
+        android:textStyle="bold"
+        android:textColor="@color/light_sky_blue"
+        android:fontFamily="sans-serif-medium" />
+
+</LinearLayout>

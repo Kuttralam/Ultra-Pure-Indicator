@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".FirebaseValues">
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:hint="Date and Time" />
+
+    <TextView
+        android:id="@+id/place"
+        android:hint="Place"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/density"
+        android:hint="Density"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/viscosity"
+        android:hint="Viscosity"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/density"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:hint="Quantity"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quality"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/quality"
+        android:hint="Quality"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_below="@id/viscosity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/light_cyan"
+        android:layout_below="@id/quantity"
+        android:layout_marginStart="60dp"
+        android:layout_alignParentStart="true"
+        android:text="Save"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/screenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/light_cyan"
+        android:layout_below="@id/quantity"
+        android:layout_marginEnd="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:text="Screenshot"
+        android:padding="10dp"
+        />
+    <Button
+        android:id="@+id/shares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/light_cyan"
+        android:layout_below="@id/screenshot"
+        android:layout_centerHorizontal="true"
+        android:text="Share"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.upi">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="UPI"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name=".database" />
+        <activity
+            android:name=".splashscreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="29cbd600bb8183011201895a931db91e93f2d614" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".qr"
+            android:label="Qr Code"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".About"
+            android:label="About"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Message"
+            android:label="Message"
+            android:parentActivityName=".About" />
+        <activity
+            android:name=".ScanCode"
+            android:label="QR Scanner"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FirebaseValues"
+            android:label="Results"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".History"
+            android:label="History"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
